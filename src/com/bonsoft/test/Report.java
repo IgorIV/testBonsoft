@@ -229,7 +229,7 @@ public class Report extends javax.swing.JFrame {
             }
         }
         sheet.autoSizeColumn(0);
-        try (FileOutputStream fileExcel = new FileOutputStream("Report.xlsx")) {
+        try (FileOutputStream fileExcel = new FileOutputStream("Report.xls")) {
             workbook.write(fileExcel);
         } catch (IOException ex) {
             Logger.getLogger(Report.class.getName()).log(Level.SEVERE, null, ex);
